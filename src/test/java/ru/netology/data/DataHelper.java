@@ -1,4 +1,4 @@
-package ru.netology;
+package ru.netology.data;
 
 import lombok.Value;
 
@@ -33,15 +33,14 @@ public class DataHelper {
     @Value
     public static class CardInfo {
         String cardNumber;
-        String cardBalance;
     }
 
     public static CardInfo getFirstCardInfo() {
-        return new CardInfo("5559000000000001", "10000");
+        return new CardInfo("5559000000000001");
     }
 
     public static CardInfo getSecondCardInfo() {
-        return new CardInfo("5559000000000002", "10000");
+        return new CardInfo("5559000000000002");
     }
 
     public static int getBalanceAfterWritingOff(int balance, int cash) {

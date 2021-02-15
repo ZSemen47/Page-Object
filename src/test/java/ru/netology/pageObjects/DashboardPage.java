@@ -1,4 +1,4 @@
-package ru.netology;
+package ru.netology.pageObjects;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.ElementsCollection;
@@ -27,7 +27,7 @@ public class DashboardPage {
     }
 
     public static TransferPage clickToReplenishSecondCard() {
-        actionDepositOne.click();
+        actionDepositTwo.click();
         return new TransferPage();
     }
 
