@@ -69,7 +69,7 @@ public class MoneyTransferTest {
         val verificationPage = loginPage.validLogin(authInfo);
         val verificationCode = DataHelper.getVerificationCodeFor(authInfo);
         verificationPage.validVerify(verificationCode);
-        val randomCash = DataGenerator.generateRandomCash();
+        val randomCash = DataGenerator.generateInvalidCash();
         val transferPage = DashboardPage.clickToReplenishFirstCard();
         val transferInfo = DataHelper.getSecondCardInfo();
         transferPage.validTransferToFirst(transferInfo, randomCash);
